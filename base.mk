@@ -203,10 +203,9 @@ PRODUCT_COPY_FILES += \
     device/phh/treble/remote/phh-remotectl.rc:system/etc/init/phh-remotectl.rc \
     device/phh/treble/remote/phh-remotectl.sh:system/bin/phh-remotectl.sh \
 
-PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1-service.oppo.compat \
-    android.hardware.biometrics.fingerprint@2.1-service.oplus.compat \
-
+# MrEzequielOS: shims de digital OnePlus/OPPO removidos (HALs proprietarios
+# vendor.oppo/oplus.hardware.biometrics.fingerprint@2.1 indisponiveis na arvore;
+# irrelevantes p/ GSI de teste -- digital do aparelho usa o HAL do vendor).
 PRODUCT_PACKAGES += \
     curl
 
