@@ -105,12 +105,12 @@ PRODUCT_PACKAGES += \
 endif
 
 PRODUCT_PACKAGES += \
-    android.hidl.manager-V1.0-java \
-    vendor.huawei.hardware.biometrics.fingerprint-V2.1-java \
-    vendor.huawei.hardware.tp-V1.0-java \
-    vendor.qti.hardware.radio.am-V1.0-java \
-    vendor.qti.qcril.am-V1.0-java \
-    vendor.xiaomi.hardware.displayfeature-V1.0-java
+    android.hidl.manager-V1.0-java
+
+# MrEzequielOS: libs HIDL-Java vendor removidas (huawei/tp, qti radio am,
+# qcril am, xiaomi displayfeature) -- .hal indisponiveis na arvore 23.2
+# e irrelevantes p/ GSI de teste (só serviam a tweaks p/ aqueles OEMs
+# no TrebleApp, que é prebuilt e segue funcionando sem elas).
 
 PRODUCT_COPY_FILES += \
     device/phh/treble/interfaces.xml:system/etc/permissions/interfaces.xml
