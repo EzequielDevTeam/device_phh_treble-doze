@@ -161,9 +161,9 @@ PRODUCT_COPY_FILES += \
     device/phh/treble/00-fix-metadata.rc:system/etc/init/00-fix-metadata.rc \
     device/phh/treble/00-fix-metadata.sh:system/etc/00-fix-metadata.sh
 
-# MTK incoming SMS fix
-PRODUCT_PACKAGES += \
-    mtk-sms-fwk-ready
+# MrEzequielOS: mtk-sms-fwk-ready removido (precisa do HAL proprietario
+# vendor.mediatek.hardware.radio@2.6, ausente na arvore; fix de SMS p/
+# aparelhos MediaTek, irrelevante p/ GSI de teste).
 
 # Helper to debug Xiaomi motorized camera
 PRODUCT_PACKAGES += \
