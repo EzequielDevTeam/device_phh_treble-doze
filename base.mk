@@ -165,10 +165,10 @@ PRODUCT_COPY_FILES += \
 # vendor.mediatek.hardware.radio@2.6, ausente na arvore; fix de SMS p/
 # aparelhos MediaTek, irrelevante p/ GSI de teste).
 
-# Helper to debug Xiaomi motorized camera
-PRODUCT_PACKAGES += \
-    xiaomi-motor \
-    oneplus-motor
+# MrEzequielOS: xiaomi-motor/oneplus-motor removidos (precisam dos HALs
+# proprietarios vendor.xiaomi.hardware.motor / vendor.oneplus.hardware.
+# motorcontrol, ausentes na arvore; cameras motorizadas irrelevantes p/
+# GSI de teste).
 
 PRODUCT_PACKAGES += \
     Stk
