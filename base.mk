@@ -254,8 +254,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     QcRilAm
 
+# MrEzequielOS: slsi-booted removido (precisa do HAL proprietario
+# vendor.samsung_slsi.hardware.ExynosHWCServiceTW, ausente; Exynos irrelevante
+# p/ GSI de teste).
 PRODUCT_PACKAGES += \
-    slsi-booted \
     Iwlan \
     QualifiedNetworksService \
     MtkInCallService \
